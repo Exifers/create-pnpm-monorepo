@@ -1,10 +1,10 @@
 {
   "name": "create-pnpm-monorepo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Create a pnpm monorepo",
   "type": "module",
   "bin": {
-    "create-pnpm-monorepo": "./dist/index.mjs"
+    "create-pnpm-monorepo": "index.js"
   },
   "scripts": {
     "build": "unbuild",
