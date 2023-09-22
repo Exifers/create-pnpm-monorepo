@@ -4,10 +4,11 @@
   "description": "Create a pnpm monorepo",
   "type": "module",
   "bin": {
-    "create-pnpm-monorepo": "./dist/index.js"
+    "create-pnpm-monorepo": "./dist/index.mjs"
   },
   "scripts": {
-    "build": "tsc -p ./tsconfig.json"
+    "build": "unbuild",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [
     "monorepo",
@@ -27,6 +28,7 @@
     "kolorist": "^1.8.0",
     "minimist": "^1.2.8",
     "prompts": "^2.4.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0"
   }
 }
