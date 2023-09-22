@@ -1,10 +1,10 @@
 {
   "name": "create-pnpm-monorepo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create a pnpm monorepo",
   "type": "module",
   "bin": {
-    "create-pnpm-monorepo": "./index.js"
+    "create-pnpm-monorepo": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc -p ./tsconfig.json"
