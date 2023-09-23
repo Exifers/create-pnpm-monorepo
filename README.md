@@ -3,7 +3,7 @@ Features:
 - pnpm
 - react
 - fastify
-- vite-plugin-node for extra-fast hot-reload ⚡
+- vite-plugin-node for extra-fast hmr ⚡
 - hierarchical typescript and eslint configs
 - packages generators using [plopjs](https://plopjs.com/)
 
