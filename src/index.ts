@@ -103,7 +103,7 @@ async function init() {
   }
 
   const pkgInfo = pkgFromUserAgent(process.env.npm_config_user_agent);
-  const pkgManager = pkgInfo ? pkgInfo.name : "npm";
+  const pkgManager = "pnpm";
 
   console.log(`\nScaffolding project in ${root}...`);
 
@@ -145,10 +145,6 @@ async function init() {
     );
   }
   switch (pkgManager) {
-    case "yarn":
-      console.log("  yarn");
-      console.log("  yarn dev");
-      break;
     default:
       console.log(`  ${pkgManager} install`);
       console.log(`  ${pkgManager} run dev`);
