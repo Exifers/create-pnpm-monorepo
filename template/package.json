@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "license": "UNLICENSED",
+  "scripts": {
+    "gen": "plop",
+    "dev": "pnpm --filter=* --stream run dev",
+    "lint": "pnpm --filter=* --stream run lint",
+    "typecheck": "pnpm --filter=* --stream run typecheck",
+    "test": "pnpm --filter=* --stream run test",
+    "build": "pnpm --filter=* --stream run build",
+    "clean": "pnpm --filter=* --stream run clean && rm -rf node_modules"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": "7.30.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.44.2",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.45.0",
+    "plop": "^4.0.0",
+    "syncpack": "^11.2.1",
+    "typescript": "^5.2.2"
+  }
+}

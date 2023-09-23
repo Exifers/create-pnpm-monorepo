@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    // type checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+
+    // modules
+    "allowArbitraryExtensions": true, // ?
+    "allowImportingTsExtensions": true,
+    "allowUmdGlobalAccess": false,
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+    "types": [], // prevent @types/node from being included
+
+    // emit
+    "declaration": false,
+    "downlevelIteration": true,
+    "emitBOM": false,
+    "importHelpers": false, // potential optimization
+    "noEmit": true,
+    "preserveConstEnums": true,
+
+    // interop constraints
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    // language and environment
+    "lib": ["ESNext"],
+    "moduleDetection": "force",
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+
+    // completeness
+    "skipLibCheck": true,
+  }
+}

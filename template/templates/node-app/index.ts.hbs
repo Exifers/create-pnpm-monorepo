@@ -1,0 +1,10 @@
+/// <reference path="./src/vite-env.d.ts" />
+import fastify from "fastify";
+
+export const app = fastify({ logger: true });
+
+app.get("/", () => ({ message: "hello world" }));
+
+if (import.meta.env.PROD) {
+    await app.listen({ port: 3000 });
+}

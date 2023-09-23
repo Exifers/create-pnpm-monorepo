@@ -1,0 +1,22 @@
+{
+  "name": "{{name}}",
+  "private": true,
+  "license": "UNLICENSED",
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "import": "./index.ts"
+    }
+  },
+  "scripts": {
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --cache",
+    "test": "vitest run",
+    "typecheck": "tsc",
+    "clean": "rm -rf node_modules .eslintcache"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.2",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.5"
+  }
+}

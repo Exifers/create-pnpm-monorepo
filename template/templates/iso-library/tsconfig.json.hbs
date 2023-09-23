@@ -1,0 +1,8 @@
+{
+  // This tsconfig.json is there only for IDEs. It expects isomorphic types, ie. the
+  // common types between the builtin lib.dom.ts and @types/node. The build is always
+  // performed by a consumer package which can have a DOM or node runtime.
+
+  "extends": ["../../tsconfig.base.json"],
+  "include": ["index.ts", "src/**/*"]
+}
