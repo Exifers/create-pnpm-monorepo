@@ -40,6 +40,8 @@ async function init() {
     "projectName" | "overwrite" | "packageName"
   >;
 
+  console.log('')
+
   try {
     result = await prompts(
       [
